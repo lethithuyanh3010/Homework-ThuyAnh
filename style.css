@@ -1,0 +1,219 @@
+
+.div {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.div-2 {
+  background-color: var(--Default-White, #fff);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 20px 0;
+}
+@media (max-width: 991px) {
+  .div-2 {
+    max-width: 100%;
+  }
+}
+.div-3 {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  max-width: 1110px;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .div-3 {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.div-4 {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: var(--Text-Gray-900, #18191f);
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 143%;
+  justify-content: space-between;
+  margin: auto 0;
+}
+@media (max-width: 991px) {
+  .div-4 {
+    flex-wrap: wrap;
+    white-space: initial;
+  }
+}
+.img {
+  aspect-ratio: 3.7;
+  object-fit: auto;
+  object-position: center;
+  width: 105px;
+  max-width: 100%;
+}
+.div-5 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: auto 0;
+}
+@media (max-width: 991px) {
+  .div-5 {
+    flex-wrap: wrap;
+    white-space: initial;
+  }
+}
+.div-6 {
+  font-feature-settings: "salt" on, "clig" off, "liga" off;
+  font-family: Inter, sans-serif;
+}
+.div-7 {
+  font-feature-settings: "salt" on, "clig" off, "liga" off;
+  font-family: Inter, sans-serif;
+}
+.div-8 {
+  font-feature-settings: "salt" on, "clig" off, "liga" off;
+  font-family: Inter, sans-serif;
+}
+.div-9 {
+  font-feature-settings: "salt" on, "clig" off, "liga" off;
+  font-family: Inter, sans-serif;
+}
+.div-10 {
+  font-feature-settings: "salt" on, "clig" off, "liga" off;
+  font-family: Inter, sans-serif;
+}
+.div-11 {
+  display: flex;
+  gap: 4px;
+}
+@media (max-width: 991px) {
+  .div-11 {
+    white-space: initial;
+  }
+}
+.div-12 {
+  font-feature-settings: "salt" on, "clig" off, "liga" off;
+  font-family: Inter, sans-serif;
+}
+.img-2 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 18px;
+  align-self: start;
+}
+.div-13 {
+  display: flex;
+  gap: 12px;
+}
+.img-3 {
+  aspect-ratio: 3.33;
+  object-fit: auto;
+  object-position: center;
+  width: 135px;
+  max-width: 100%;
+}
+.img-4 {
+  aspect-ratio: 3.33;
+  object-fit: auto;
+  object-position: center;
+  width: 135px;
+  max-width: 100%;
+}
+.div-14 {
+  color: var(--Text-Gray-900, #18191f);
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  margin-top: 112px;
+  width: 1110px;
+  font: 800 72px/98px Inter, sans-serif;
+}
+@media (max-width: 991px) {
+  .div-14 {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+.div-15 {
+  font-feature-settings: "salt" on, "liga" off;
+  border-radius: 6px;
+  background-color: var(--Brand-Purple, #8c30f5);
+  margin-top: 32px;
+  color: var(--Default-White, #fff);
+  text-align: center;
+  justify-content: center;
+  padding: 12px 32px;
+  font: 500 16px/150% Inter, sans-serif;
+}
+@media (max-width: 991px) {
+  .div-15 {
+    padding: 0 20px;
+  }
+}
+.img-5 {
+  aspect-ratio: 0.86;
+  object-fit: auto;
+  object-position: center;
+  width: 280px;
+  box-shadow: 10px 15px 30px 0px rgba(41, 41, 42, 0.5);
+  margin-top: 94px;
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .img-5 {
+    margin-top: 40px;
+  }
+}
+.div-16 {
+  background-color: var(--Text-Gray-100, #f4f5f7);
+  align-self: stretch;
+  min-height: 1px;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .div-16 {
+    max-width: 100%;
+  }
+}
+
+/* .circle-background {
+    border-radius: 50%;
+    background-color: var(--Brand-Purple-800, #d6b1ff);
+    min-height: 170px;
+  } */
+
+  .container {
+    position: relative;
+    display: inline-block; /* Đảm bảo rằng vùng chứa chỉ chiếm không gian cần thiết */
+  }
+
+  .decorative-image {
+    display: block;
+    margin: 0 auto; /* Đảm bảo hình ảnh nằm giữa */
+    z-index: 1; /* dùng để nằm trên half-circle, số cao sẽ đc xếp ở trên cùng trước */
+  }
+
+  .half-circle {
+    width: 1100px;
+    height: 700px;
+    background-color: #D6B1FF; /* Màu nền */
+    /* border-radius: 100% 100% 0 0; */
+     /* Kéo cong 2 góc trên */
+    border-radius: 50%;
+    margin-top: -25%;
+  }
+
+  .background-remove-half-circle {
+    background-color: #fff;
+    height: 370px;
+    width: 100%;
+    margin-top: -21.7%;
+  }
+  
